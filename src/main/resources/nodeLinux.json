@@ -1,0 +1,30 @@
+{
+	"capabilities":[
+		{
+			"browserName": "firefox",
+			"maxInstances": 1,
+			"seleniumProtocol": "WebDriver",
+			"firefox_profile": "selenium"
+		},
+		{
+			"browserName": "chrome",
+			"maxInstances": 1,
+			"seleniumProtocol": "WebDriver"
+		},
+	],
+
+	"configuration": {
+		"nodeTimeout":12000,
+		"port":5550,
+	
+		"hubPort": 4445,
+		"hubHost": "10.0.1.100",
+		
+		"nodePolling":2000,
+		"maxSession": 6,
+		"register": true,
+		"registerCycle": 10000,
+		"cleanUpCycle": 2000,
+		"timeout": 30000,
+	}
+}
